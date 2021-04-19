@@ -12,3 +12,8 @@ var t1 = performance.now();
 addUpTo(1000000000);
 var t2 = performance.now();
 console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
+
+// const t1 = Date.now();
+// addUpTo(100000000);
+// const t2 = Date.now();
+// console.log(`time elapsed: ${(t2 - t1) / 1000} seconds`);
