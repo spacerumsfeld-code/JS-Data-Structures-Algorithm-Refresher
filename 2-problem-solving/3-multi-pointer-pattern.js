@@ -52,7 +52,7 @@ const countUniqueVals = (arr) => {
 // console.log(countUniqueVals([-2, -1, -1, 0, 1]));
 // console.log(countUniqueVals([]));
 
-//  pointer solution: O(n)
+//  pointer solution: O(n) (unfortunately this solution is only 90% complete and get an incorrect count on the last test case)
   const countUniqueVals2 = (arr) => {
 if (arr.length === 0) { return 0; };
 
@@ -80,3 +80,17 @@ console.log(countUniqueVals2([1, 1, 1, 1, 2]));
 console.log(countUniqueVals2([-2, -1, -1, 0, 1]));
 console.log(countUniqueVals2([]));
 console.log(countUniqueVals2([1,2,2,5,7,7,99]));
+
+//  this solution is correct and achieves O(n) time. It involves mutating the array as you go and of course, utilizes two pointers (the entire POINT of this section, hah get it)
+function countUniqueValues3(arr){
+  if(arr.length === 0) return 0;
+  var i = 0;
+  for(var j = 1; j < arr.length; j++){
+      if(arr[i] !== arr[j]){
+          i++;
+          arr[i] = arr[j]
+      }
+  }
+  return i + 1;
+}
+countUniqueValues([1,2,2,5,7,7,99])
