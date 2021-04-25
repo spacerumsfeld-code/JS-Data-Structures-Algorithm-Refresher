@@ -109,3 +109,6 @@ collectOddValues([1,2,3,4,5])
 //  pure recursion is often a bit trickier than helper method recursion, but is still doable. Some tips are to use array methods like concat and slice (as seen above) as well as the spread operator to generate new arrays rather than mutate them. You may need to do this when accumulating values in an array as there is no execution context where all results can be stored, unlike in helper method recursion. The same goes for strings: rather than modify them (they are immutable anyway, so it's a bit of a mute point), make copies! Finally, for objects use the spread operator or Object.assign.
 
 //see 'recursion practice' in 0-practice-problems for a good collection of problems to solve with pure recursion! Using pure recursion forces us to be acutely aware of what we return in each call, so is helpful practice
+
+//Further Reading
+https://en.wikipedia.org/wiki/Call_stack

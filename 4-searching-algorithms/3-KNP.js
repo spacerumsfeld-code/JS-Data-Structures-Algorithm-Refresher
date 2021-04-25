@@ -1,0 +1,2 @@
+KNP algorithm
+//  The KNP Algorithm is a very fancy-pants way of achieving linear time complexity for the task of finding the count of a sub-string within a larger string. However, this class does not have a section on KNP (well, it does, but it isn't complete and evidently never will be), and the solution using the multiple-pointer pattern in the last section achieves linear time complexity anyway. So, come back later for possible KNP fun!
