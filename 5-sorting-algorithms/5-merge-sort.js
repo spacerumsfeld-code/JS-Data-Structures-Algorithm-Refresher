@@ -48,5 +48,14 @@ mergeSort1([110,34,25,26,114]);
 
 //We return an array if it is less than 2 elements because that means it is already sorted. We then divide the array in half, recursively sort each half by calling on mergeSort again and again until we have single element arrays, then merge the two halves with one final merge.
 
+Breakdown
+// The worst-case time complexity of Merge Sort is O(nlogn), same as that for best case time complexity for Quick Sort. When it comes to speed, Merge Sort is one of the fastest sorting algorithms out there.
+
+// Unlike Quick Sort, Merge Sort is not an in-place sorting algorithm, meaning it takes extra space other than the input array. This is because we are using auxiliary (helper) arrays to store the sub-arrays. The space complexity of the merge sort is O(n).
+
+// Another advantage of Merge Sort is that it lends itself very well to multi-threading, since each respective half and be sorted on its own. Another common way of reducing the runtime of Merge Sort is to stop when we get to relatively small subarrays (~7) and using Insertion Sort to sort them.
+
+// This is done because Insertion Sort performs really well on small, or nearly sorted arrays. Much better than it's more globally efficient counterparts.
+
 Further Resources
 https://visualgo.net/en/sorting

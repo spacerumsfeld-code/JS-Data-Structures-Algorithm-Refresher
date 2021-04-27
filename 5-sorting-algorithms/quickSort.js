@@ -22,8 +22,6 @@
   let largerThan = [];
   let lessThan = [];
 
-    //pivot finding helper, hoisted so 'pivot' has access above
-
   //base case
   if (array.length < 2) {
     return array;
@@ -40,7 +38,5 @@
       lessThan.push(array[i]);
     }
   }
-
   return quicksort(lessThan).concat(pivot).concat(quicksort(largerThan));
-
 };
