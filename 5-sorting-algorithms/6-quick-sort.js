@@ -93,31 +93,7 @@ var quickSort = function(array) {
 
 console.log(quickSort([3,1,2,0]));
 
-//quicksort exercise
-  const quickSortExercise = (arr) => {
-    let pivot = arr[Math.floor(Math.random() * (arr.length - 1))];
-    let less = [];
-    let more = [];
-
-    if (arr.length < 2) { return arr; }
-
-    for (let el of arr) {
-      if (el === pivot) {
-        continue;
-      }
-      if (el > pivot) {
-        more.push(el);
-      } else {
-        less.push(el);
-      }
-    }
-
-    return quickSortExercise(less).concat(pivot).concat(quickSortExercise(more));
-  };
-
-  console.log(quickSortExercise([3,2,0,1,15]));
-
-//a fancy pants, short version which is improved over the above because it does not create new arrays (which worsens this quicksorts' space complexity):
+//a fancy pants, short version which is easier to remember and that uses the filter method to save some lines of code:
   const quick_sort = function (arr) {
   if (arr.length < 2) { return arr; }
 
