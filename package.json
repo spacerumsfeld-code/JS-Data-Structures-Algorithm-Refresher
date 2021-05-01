@@ -1,0 +1,30 @@
+{
+  "name": "datastructuresandalgorithms-1",
+  "version": "1.0.0",
+  "description": "data structure and algorithms practice",
+  "main": "README.md",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacerumsfeld-code/DataStructuresAndAlgorithms.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms",
+    "sorting",
+    "searching",
+    "etc."
+  ],
+  "author": "Nick Papadakis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spacerumsfeld-code/DataStructuresAndAlgorithms/issues"
+  },
+  "homepage": "https://github.com/spacerumsfeld-code/DataStructuresAndAlgorithms#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}

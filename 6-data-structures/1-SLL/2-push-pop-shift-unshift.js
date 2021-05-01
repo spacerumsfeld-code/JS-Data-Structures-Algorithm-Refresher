@@ -168,6 +168,7 @@ class SLL4 {
       this.tail = newNode;
     }
     this.length += 1;
+    return this;
   }
 
   pop() {
@@ -199,6 +200,9 @@ class SLL4 {
     let temp = this.head;
     this.head = this.head.next;
     this.length -= 1;
+    if (!this.length) {
+      this.tail = null;
+    }
     return temp;
   }
 
@@ -212,6 +216,7 @@ class SLL4 {
       this.head = newNode;
     }
     this.length++
+    return this;
   }
 }
 

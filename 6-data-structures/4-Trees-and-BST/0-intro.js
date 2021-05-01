@@ -1,0 +1,2 @@
+//Trees and the Binary Search Tree
+//A tree is a very popular data structure. Fundamentally, trees are data structures that consist of nodes in various parent/child relationships, sometimes called root (original node) and branches. Each
