@@ -6,7 +6,7 @@
 //  A naive string search might look as follows:
 //(quadratic t-complexity)
 
-const soNaive = (str1, str2) => {
+const stringSearchQuadratic = (str1, str2) => {
   let count = 0;
   for (let i = 0; i < str1.length; i++) {
     for (let j = 0; j < str2.length; j++) {
@@ -21,11 +21,11 @@ const soNaive = (str1, str2) => {
   return count;
 };
 
-console.log(soNaive('bobbobbob', 'bob'));
+console.log(stringSearchQuadratic('bobbobbob', 'bob'));
 
 //my solution (linear t-complexity, constant s-complexity)
 
-const wizened = (str1, str2) => {
+const stringSearchLinear = (str1, str2) => {
   let p1 = 0;
   let p2 = 0;
   let count = 0;
@@ -44,4 +44,4 @@ const wizened = (str1, str2) => {
   return count;
 };
 
-console.log(wizened('bob','bobbobbob'));
+console.log(stringSearchLinear('bob','bobbobbob'));

@@ -23,17 +23,15 @@ function linearSearch(arr, value){
 //base case: array is empty. that means the target is not in this array, so we return -1. Then we check if the current middle of array is equal to the target. If so, we are lucky and we are done! We simply return the index of the target. If not, we need to see if the target is less than or greater than the current mid. If it is less than, we call our function on the first half of the array, excluding the mid (since we already checked that). If it is greater, we call our function on the second half of the array (again, excluding mid since we already checked it).
 
 //This process continues until we either find our target (identified via midpoint), or our array is sliced into an empty array and we return -1.
-function binarySearch(arr, tgt, start, end) {
+const binarySearch = (arr, tgt, start=0, end=arr.length-1) => {
     if(start > end) return -1;
-    start = 0;
-    end = arr.length-1;
     let mid = Math.floor((start + end) / 2);
 
     if(arr[mid] === tgt) return mid;
     if(tgt > arr[mid]) {
-        return BinarySearch(arr, tgt, mid + 1, end);
+        return binarySearch(arr, tgt, mid + 1, end);
     } else if(tgt < arr[mid]) {
-        return BinarySearch(arr, tgt, start, mid -1);
+        return binarySearch(arr, tgt, start, mid -1);
     }
 }
 
@@ -43,7 +41,7 @@ console.log(binarySearch([1,3,4,5], 5));
 
   //Finally, here is an iterative, non-recursive solution:
 
-  function binarySearch(arr, target) {
+  function binarySearch2(arr, target) {
     var start = 0;
     var end = arr.length - 1;
     var middle = Math.floor((start + end) / 2);
@@ -61,3 +59,8 @@ console.log(binarySearch([1,3,4,5], 5));
 
     return -1;
 };
+
+module.exports = {
+    linearSearch,
+    binarySearch
+}
