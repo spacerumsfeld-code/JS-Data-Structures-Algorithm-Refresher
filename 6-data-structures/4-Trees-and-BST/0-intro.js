@@ -23,7 +23,6 @@
 // 1,2  3,4 = Sibling pairs
 // 3,4,5 = leafs
 
-
 // Basic tree
 //Here we will define an extremely basic tree! On this model, each node is itself a tree with its children represented by an array of children trees.
 class Tree {
