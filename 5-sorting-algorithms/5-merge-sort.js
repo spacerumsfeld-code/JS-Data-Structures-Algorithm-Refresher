@@ -40,8 +40,8 @@ const mergeSort = (arr) => {
   let mid = Math.floor(arr.length / 2);
   let l = arr.slice(0, mid);
   let r = arr.slice(mid);
-  let sortedL = mergeSort1(l);
-  let sortedR = mergeSort1(r);
+  let sortedL = mergeSort(l);
+  let sortedR = mergeSort(r);
   return mergeArrays(sortedL, sortedR);
 };
 // mergeSort1([110,34,25,26,114]);

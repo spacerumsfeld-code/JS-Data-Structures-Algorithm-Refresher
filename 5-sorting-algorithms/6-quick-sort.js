@@ -1,3 +1,5 @@
+//editor note: neither of these quicksorts handles duplicate values properly. They are fine for getting the concept of the quick sort algorithm, but we need to design a better solution that can handle potential duplicates.
+
 // Quicksort
 // //Over the years, many sorting algorithms have been developed, and one of the fastest ones to date is Quicksort.
 
@@ -93,17 +95,24 @@ var quickSort = function(array) {
 
 // console.log(quickSort([3,1,2,0]));
 
-//a fancy pants, short version which is easier to remember and that uses the filter method to save some lines of code:
-  const quick_sort = function (arr) {
+//a fancy pants, short version which is easier to remember and that uses the filter method to save some lines of code: Note: this version does not handle duplicates very well; it is a work in progress
+  const quick_sort = (arr) => {
   if (arr.length < 2) { return arr; }
-
-  let pivot = arr[Math.round(Math.random() * (arr.length - 1))];
+  let pivot = arr[Math.floor(Math.random() * arr.length - 1)];
   let less = arr.filter(el => el < pivot);
   let more = arr.filter(el => el > pivot);
-
   return quick_sort(less).concat(pivot).concat(quick_sort(more));
 };
 // console.log(quick_sort([3,1,13,2,0,15]));
+
+  const quick_sort_dups = (arr) => {
+    if (arr.length < 2) { return arr; }
+    let pivot = arr[0];
+    arr.shift();
+    let left = quickSort(arr.filter(el => el <= pivot));
+    let right = quickSort(arr.filter(el => el > pivot));
+    return [...left, pivot, ...right];
+  }
 
 // Breakdown
 //Now that we know how to implement the Quicksort algorithm let us discuss the time and space complexity. The worst-case time complexity of Quick Sort is O(n2). The average case time complexity is O(nlogn). The worst-case is usually avoided by using a randomized version of Quicksort.
@@ -118,4 +127,4 @@ var quickSort = function(array) {
 // https://stackabuse.com/quicksort-in-javascript/
 // https://www.digitalocean.com/community/tutorials/js-quick-sort
 
-module.exports = { quick_sort }
+module.exports = { quick_sort_dups }
