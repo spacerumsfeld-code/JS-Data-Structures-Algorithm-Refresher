@@ -1,8 +1,8 @@
-Bubble Sort
+// Bubble Sort
 
 // //Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order
 
-Example
+// Example
   const swap = (arr, i1, i2) => {
     [arr[i1], arr[i2]] = [arr[i2], arr[i1]];
   };
@@ -21,9 +21,9 @@ Example
     return arr;
   };
 
-  console.log(bubbleSort([1,3,2,4,0]));
+  // console.log(bubbleSort([1,3,2,4,0]));
 
-  More Details
+  // More Details
   // Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted.
 
   // Best Case Time Complexity: O(n). Best case occurs when array is already sorted.
@@ -31,3 +31,5 @@ Example
   // Auxiliary Space: O(1)
 
   // Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
+
+  module.exports = { bubbleSort }

@@ -1,4 +1,4 @@
-Selection Sort
+// Selection Sort
 // The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
 
 // 1) The subarray which is already sorted.
@@ -6,7 +6,7 @@ Selection Sort
 
 // In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
 
-Example
+// Example
 function selectionSort(arr) {
   const swap = (arr, idx1, idx2) =>
     ([arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]);
@@ -26,7 +26,7 @@ function selectionSort(arr) {
 
 selectionSort([0,2,34,22,10,19,17]);
 
-Breakdown
+// Breakdown
 // Time Complexity: O(n2) as there are two nested loops.
 
 // Auxiliary Space: O(1)
@@ -38,3 +38,5 @@ Breakdown
 // Stability : The default implementation is not stable. However it can be made stable. Please see stable selection sort for details.
 
 // In Place : Yes, it does not require extra space.
+
+module.exports = { selectionSort }

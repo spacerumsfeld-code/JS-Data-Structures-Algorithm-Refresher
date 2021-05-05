@@ -1,4 +1,4 @@
-Merge sort
+// Merge sort
 //Merge sort is the first of the three intermediate algorithms we will consider. These algorithms are almost almost more efficient than the quadratic algorithms we covered up to this point, but are more complicated! You got this.
 
 //Merge sort utilizes the divide and conquer pattern to increase efficiency. This algorithm recursively breaks our dataset down into halves until each element is its own array, and then merges these sub-arrays! Thus, the dataset is decomposed into single element arrays and then we concatenate a bunch of merges back up the dataset until we have a new sorted whole.
@@ -35,7 +35,7 @@ const mergeArrays = (arr1, arr2) => {
 
 //Once we have a building block function to perform our merges, we can finish the job with a main mergeSort function body:
 
-const mergeSort1 = (arr) => {
+const mergeSort = (arr) => {
   if (arr.length < 2) { return arr; }
   let mid = Math.floor(arr.length / 2);
   let l = arr.slice(0, mid);
@@ -44,11 +44,11 @@ const mergeSort1 = (arr) => {
   let sortedR = mergeSort1(r);
   return mergeArrays(sortedL, sortedR);
 };
-mergeSort1([110,34,25,26,114]);
+// mergeSort1([110,34,25,26,114]);
 
 //We return an array if it is less than 2 elements because that means it is already sorted. We then divide the array in half, recursively sort each half by calling on mergeSort again and again until we have single element arrays, then merge the two halves with one final merge.
 
-Breakdown
+// Breakdown
 // The worst-case time complexity of Merge Sort is O(nlogn), same as that for best case time complexity for Quick Sort. When it comes to speed, Merge Sort is one of the fastest sorting algorithms out there.
 
 // Unlike Quick Sort, Merge Sort is not an in-place sorting algorithm, meaning it takes extra space other than the input array. This is because we are using auxiliary (helper) arrays to store the sub-arrays. The space complexity of the merge sort is O(n).
@@ -57,5 +57,7 @@ Breakdown
 
 // This is done because Insertion Sort performs really well on small, or nearly sorted arrays. Much better than it's more globally efficient counterparts.
 
-Further Resources
+// Further Resources
 https://visualgo.net/en/sorting
+
+module.exports = { mergeSort }

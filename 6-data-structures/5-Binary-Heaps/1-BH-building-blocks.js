@@ -8,3 +8,9 @@ Binary Heap Building Blocks
 //We can also find a given node's parent with the following formula: for a given node at index i, its parent is at Math.floor((i - 2) / 2). This will identify a parent node of a given node without fail.
 
 //That's it for our data structure! A simple class with an array and set formulae for finding child/parent relationships betwixt the values contained therein. Damn I love the word 'betwixt'.
+
+//Time Complexity Note:
+//Binary Heap Complexities
+//Insert: O(logN)
+//removal: O(logN)
+//search: O(N)

@@ -91,7 +91,7 @@ var quickSort = function(array) {
   return quickSort(lessThan).concat(pivot).concat(quickSort(largerThan));
 };
 
-console.log(quickSort([3,1,2,0]));
+// console.log(quickSort([3,1,2,0]));
 
 //a fancy pants, short version which is easier to remember and that uses the filter method to save some lines of code:
   const quick_sort = function (arr) {
@@ -103,7 +103,7 @@ console.log(quickSort([3,1,2,0]));
 
   return quick_sort(less).concat(pivot).concat(quick_sort(more));
 };
-console.log(quick_sort([3,1,13,2,0,15]));
+// console.log(quick_sort([3,1,13,2,0,15]));
 
 // Breakdown
 //Now that we know how to implement the Quicksort algorithm let us discuss the time and space complexity. The worst-case time complexity of Quick Sort is O(n2). The average case time complexity is O(nlogn). The worst-case is usually avoided by using a randomized version of Quicksort.
@@ -117,3 +117,5 @@ console.log(quick_sort([3,1,13,2,0,15]));
 // Further Resources
 // https://stackabuse.com/quicksort-in-javascript/
 // https://www.digitalocean.com/community/tutorials/js-quick-sort
+
+module.exports = { quick_sort }

@@ -67,11 +67,11 @@ class Tree {
   }
 }
 
-let test = new Tree(1);
-test.insert(2);
-test.insert(4);
-test.children[0].insert(3);
-test.children[1].insert(5);
+// let test = new Tree(1);
+// test.insert(2);
+// test.insert(4);
+// test.children[0].insert(3);
+// test.children[1].insert(5);
 // // console.log(test.DFS_pre()); // 12345
 // console.log(test.DFS_post()); // 32541
 // // console.log(test.DFS_in_order());
