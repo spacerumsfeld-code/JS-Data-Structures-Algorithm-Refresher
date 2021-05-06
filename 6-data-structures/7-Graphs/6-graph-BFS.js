@@ -1,5 +1,10 @@
-//Graph Breadth-first Traversal
-//Traversing a graph with the BF approach is a little bit different than DFS: we will visit the start node's neighbors (all of them), then proceed to one of its neighbors and visit ALL of its neighbors, and so on. We are not taking a direct route through the graph via neighbors as we would in a DF approach; instead, we comprehensively expand from a base and make that web bigger and bigger as we go.
+/* Graph Breadth-first Traversal */
+/*Traversing a graph with the BF approach is a little bit different than DFS:
+we will visit the start node's neighbors (all of them), then proceed to one
+of its neighbors and visit ALL of its neighbors, and so on. We are not taking
+a direct route through the graph via neighbors as we would in a DF approach;
+instead, we comprehensively expand from a base and make that web bigger and bigger
+as we go.*/
 
 class Graph {
   constructor () {
