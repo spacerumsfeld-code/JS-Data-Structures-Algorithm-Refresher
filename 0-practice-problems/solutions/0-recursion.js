@@ -1,4 +1,5 @@
 /* --------------------- Recursion Solutions -------------------- */
+
 // 1. Find the factorial of an input integer
 var factorial = function(n) {
   if (n <= 1) { return 1; }

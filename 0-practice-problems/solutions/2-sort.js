@@ -19,6 +19,8 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
+//Quadratic
+
 //2. Selection Sort
   const selectionSort = (arr) => {
 
@@ -35,6 +37,8 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
+//Quadratic
+
 //3. Insertion Sort
   const insertionSort = (arr) => {
 	var currentVal;
@@ -47,6 +51,8 @@ const bubbleSort = (arr) => {
     }
     return arr;
 };
+
+//Quadratic
 
 //4. Merge Sort
   const mergeArrays = (arr1, arr2) => {
@@ -70,6 +76,8 @@ const bubbleSort = (arr) => {
     return mergeArrays(l, r);
   };
 
+  //Log-linear
+
 //5. Quick Sort
   const quickSort = (arr) => {
     if (arr.length < 2) { return arr; }
@@ -80,3 +88,5 @@ const bubbleSort = (arr) => {
     let right = quickSort(arr.filter(el => el > pivot));
     return [...left, pivot, ...right];
   }
+
+  //Log-linear
