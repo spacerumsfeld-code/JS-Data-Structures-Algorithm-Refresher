@@ -17,6 +17,13 @@ class StackExample {
 
 //1. Using the above building blocks, build a "push" method for a stack that takes an input value and makes it a node at the top of the stack. (Name the method as such for testing purposes.)
 
+class Node {
+
+}
+class Stack {
+
+}
+
 //2. Using the above building blocks, build a "pop" method for a stack that removes the top of the stack and returns the removed value.
 
 //3. BONUS: develop a "length" method that returns the size of the stack

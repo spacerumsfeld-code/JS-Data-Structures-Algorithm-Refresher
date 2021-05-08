@@ -12,7 +12,7 @@ beforeEach(() => {
   test = new stack.Stack();
 });
 
-  describe('Our stack data structure should have all the basicmost methods and they should work as intended', () => {
+  describe('Our stack build should have all the basicmost methods and they should work as intended', () => {
 
     it('Should have a method called "push"', () => {
       expect(stack.Stack.toString().includes('push')).toBe(true);
@@ -39,6 +39,13 @@ beforeEach(() => {
       expect(test.top.next.val).toBe(2);
       expect(test.top.next.next.val).toBe(1);
     });
+
+    it('The stack should keep track of how many nodes it contains', () => {
+      nodePusher(test, 3);
+      expect(test.size).toBe(3);
+      test.pop();
+      expect(test.size).toBe(2);
+    })
 
     it('The pop method should return the current top of the stack\'s value', () => {
       nodePusher(test, 3);

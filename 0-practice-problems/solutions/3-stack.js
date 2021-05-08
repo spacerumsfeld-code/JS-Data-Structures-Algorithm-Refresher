@@ -1,5 +1,6 @@
 /* ----- Complete Stack Class and Methods ----- */
 
+//Linked List Implementation (what the tests assume)
 class Node {
   constructor(val) {
     this.val = val;
@@ -53,12 +54,10 @@ class Stack {
     return false;
   }
 
-  //look at the top of the stack but do not pop
   peek () {
     return this.top.val;
   }
 
-  //spit out all the values of the stack so we can take a gander!
   print () {
     let result = [];
     let current = this.top;
@@ -67,5 +66,37 @@ class Stack {
       current = current.next;
     }
     return result;
+  }
+};
+
+//Simple Array Implementation
+let stack = [];
+stackArr.push(1);
+stackArr.push(2);
+stackArr.pop();
+stackArr.pop();
+
+//Non-LL Variant /w storage object instead of nodes
+class Stack2 {
+  constructor() {
+    this.size = 0;
+    this.item = 0;
+    this.storage = {};
+  }
+
+  push (val) {
+    this.storage[this.item] = val;
+    this.size++;
+    this.item++;
+  }
+
+  pop () {
+    if (this.size > 0) {
+      this.size--;
+    }
+
+    let valToRemove = this.storage[this.size];
+    delete this.storage[this.size];
+    return valToRemove;
   }
 };
