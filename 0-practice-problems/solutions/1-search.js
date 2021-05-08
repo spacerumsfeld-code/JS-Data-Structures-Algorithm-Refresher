@@ -35,7 +35,7 @@
   }
 
   //recursive
-  const binarySearch = (arr, tgt, start=0, end=arr.length-1) => {
+  const binarySearchR = (arr, tgt, start=0, end=arr.length-1) => {
     if (start > end) { return -1 }
     let mid = Math.floor((start + end) / 2);
     if (tgt === arr[mid]) { return mid; }

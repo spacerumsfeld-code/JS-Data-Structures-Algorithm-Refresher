@@ -31,5 +31,3 @@
   // Auxiliary Space: O(1)
 
   // Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
-
-  module.exports = { bubbleSort }

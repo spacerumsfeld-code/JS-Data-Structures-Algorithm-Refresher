@@ -1,5 +1,6 @@
+/* ----- Recursion Practice ----- */
 
-// Solve the following prompts using pure recursion. Recall that this means not using an inner helper function. Sample solutions provided at the bottom of this file.
+// Solve the following prompts using pure recursion. Recall that this means not using an inner helper function.
 
 // 1. Calculate the factorial of a number. The factorial of a non-negative integer n,
 // denoted by n!, is the product of all positive integers less than or equal to n.
