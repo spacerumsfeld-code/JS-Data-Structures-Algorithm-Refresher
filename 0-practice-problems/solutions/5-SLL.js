@@ -5,7 +5,8 @@ class Node {
     this.val = val;
     this.next = null;
   }
-}
+};
+
 class SLL {
   constructor() {
     this.head = null;
@@ -13,46 +14,52 @@ class SLL {
     this.length = 0;
   }
 
-  push(val) {
+  push (val) {
     let newNode = new Node(val);
     if (!this.length) {
-      this.tail = newNode;
       this.head = newNode;
+      this.tail = newNode;
     } else {
       this.tail.next = newNode;
       this.tail = newNode;
     }
-    this.length += 1;
+    this.length++;
     return this;
   }
 
-  pop() {
-    if (!this.length) {
-      return undefined;
+  pop () {
+    if (!this.length) { return undefined; }
+
+    if (this.length === 1) {
+      let retVal = this.head.val;
+      this.head = null;
+      this.tail = null;
+      return retVal;
     }
 
     let oldTail = this.tail;
     let newTail = this.get(this.length - 2);
+    newTail.next = null;
     this.tail = newTail;
-    this.tail.next = null;
-    return oldTail;
+    this.length--;
+    return oldTail.val;
   }
 
-  shift() {
-    if (!this.length) {
-      return undefined;
-    }
-    let temp = this.head;
+  shift () {
+    if (!this.length) { return undefined; }
+
+    let temp = this.head.val;
     this.head = this.head.next;
-    this.length -= 1;
+    this.length--;
     if (!this.length) {
       this.tail = null;
     }
     return temp;
   }
 
-  unshift(val) {
+  unshift (val) {
     let newNode = new Node(val);
+
     if (!this.length) {
       this.head = newNode;
       this.tail = newNode;
@@ -60,32 +67,33 @@ class SLL {
       newNode.next = this.head;
       this.head = newNode;
     }
-    this.length++
+    this.length++;
     return this;
   }
 
-  get(i) {
-    if (i < 0 || i >= this.length) {
-      return null;
-    }
+  get (i) {
+    if (!this.length) { return undefined; }
+
+    if (i >= this.length || i < 0) { return undefined; }
 
     let current = this.head;
-    let count = 0;
+    let position = 0;
 
-    while (count !== i) {
+    while (current) {
+      if (position === i) {
+        return current;
+      }
+      position++;
       current = current.next;
-      count++;
     }
-    return current;
   }
 
-  set(i, val) {
-    let nodeToSet = this.get(i);
-    if (nodeToSet) {
-      nodeToSet.val = val;
-      return true;
-    }
-    return false;
+  set (i, val) {
+    if (!this.length || i < 0 || i >= this.length) { return false; }
+
+    let replace = this.get(i);
+    replace.val = val;
+    return true;
   }
 
   insert(i, val) {
