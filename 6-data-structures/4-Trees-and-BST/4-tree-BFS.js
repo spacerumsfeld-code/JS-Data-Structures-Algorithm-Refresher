@@ -13,7 +13,7 @@ class Tree {
   }
 
   find(val) {
-    if (this.val === null) { return null; }
+    if (!this.val) { return null; }
 
     let target = null;
     const nodeFinder = (node) => {
@@ -94,6 +94,7 @@ class BST {
   }
 
   BFS () {
+    let node = this;
     let values = [];
     let queue = [];
     queue.push(this);

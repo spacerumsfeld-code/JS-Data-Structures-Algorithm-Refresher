@@ -31,29 +31,6 @@ class SLLExample {
 
 //8. BONUS: Build a "remove" method that deletes a node at a given position in the list and properly connects its former neighbors to each other.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-
 const sll = { Node, SLL };
 
 module.exports = sll;
