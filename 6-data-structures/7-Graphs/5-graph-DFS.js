@@ -38,7 +38,7 @@ class Graph {
 
     return result;
   }
-}
+};
 
 let test = new Graph();
 test.addVertex('A');
