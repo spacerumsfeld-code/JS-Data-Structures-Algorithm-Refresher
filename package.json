@@ -4,7 +4,15 @@
   "description": "data structure and algorithms practice",
   "main": "README.md",
   "scripts": {
-    "test stack": "jest stacks.spec.js",
+    "test-recursion": "jest recursion.spec.js",
+    "test-stack": "jest stacks.spec.js",
+    "test-queue": "jest queues.spec.js",
+    "test-SLL": "jest sll.spec.js",
+    "test-BST": "jest binarySearchTree.spec.js",
+    "test-binary-heap": "jest binaryHeap.spec.js",
+    "test-priority-queue": "jest priorityQueue.spec.js",
+    "test-hash-table": "jest hash-table.spec.js",
+    "test-graph": "jest graph.spec.js",
     "test": "jest"
   },
   "repository": {

@@ -17,6 +17,21 @@ class SLLExample {
 
 //1. Using the above building blocks, build a "push" method that adds a node to the end of the list.
 
+class Node {
+  constructor (val) {
+    this.val = val;
+    this.next = null;
+  }
+};
+
+class SLL {
+  constructor () {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
+}
+
 //2. Build a pop method that returns the value of the tail and disconnects it from the list.
 
 //3. Build a shift method that returns the value of the head and disconnects it from the list.

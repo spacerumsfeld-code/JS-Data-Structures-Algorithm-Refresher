@@ -48,14 +48,6 @@ Recursion Basics
 //   console.log("All done!")
 // }
 
-//  factorial recursive
-const factorial = (num) => {
-  // if (num === 1) { return 1; }
-  // return num * factorial(num - 1);
-};
-
-console.log(factorial(3));
-
 5. Common errors with recursion
 //  No base case. The recursion will run forever!!!! (well, until the max call stack size is exceeded).
 //  Forgetting to return, or returning the wrong thing in a given execution context
