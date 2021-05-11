@@ -4,6 +4,7 @@
   "description": "data structure and algorithms practice",
   "main": "README.md",
   "scripts": {
+    "test stack": "jest stacks.spec.js",
     "test": "jest"
   },
   "repository": {
