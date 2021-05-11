@@ -1,2 +1,0 @@
-//Extra Goodies
-//In this section we will develop a 'remove' method for our hash table, as well as dynamic resizing. Dynamic resizing is a common property of hash tables: if the amount of indexes getting filled up is sufficiently high, we can dynamically radjust the size of the table to be ready for further insertions, and vice versa for if very little of the current table is being utilized.
