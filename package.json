@@ -5,6 +5,8 @@
   "main": "README.md",
   "scripts": {
     "test-recursion": "jest recursion.spec.js",
+    "test-searching": "jest search.spec.js",
+    "test-sorting": "jest sorting.spec.js",
     "test-stack": "jest stacks.spec.js",
     "test-queue": "jest queues.spec.js",
     "test-SLL": "jest sll.spec.js",
@@ -25,7 +27,8 @@
     "algorithms",
     "sorting",
     "searching",
-    "etc."
+    "fundamentals",
+    "recursion"
   ],
   "author": "Nick Papadakis",
   "license": "MIT",
