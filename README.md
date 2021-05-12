@@ -18,8 +18,7 @@ Begin with Section 1 and proceed in numerical order from there. As you proceed, 
 
 # Scripts
 npm run test : run the entire test suite!\
- + npm run test-recursion
- run the recursion test suite\
+npm run test-recursion : run the recursion test suite\
 npm run test-searching : run the searching algorithm test suite\
 npm run test-sorting : run the sorting algorithm test suite\
 npm run test-stack : run the stack test suite\
