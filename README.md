@@ -17,7 +17,7 @@ Begin with Section 1 and proceed in numerical order from there. As you proceed, 
 4. Visit Section 0 and attempt the practice problems once you have completed a section; for your convenience, the following scripts are available:
 
 # Scripts
-<color="red">npm run test</color> : run the entire test suite!\
+npm run test : run the entire test suite!\
  + npm run test-recursion
  run the recursion test suite\
 npm run test-searching : run the searching algorithm test suite\
