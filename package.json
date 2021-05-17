@@ -15,7 +15,9 @@
     "test-priority-queue": "jest priorityQueue.spec.js",
     "test-hash-table": "jest hash-table.spec.js",
     "test-graph": "jest graph.spec.js",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
   },
   "homepage": "https://github.com/spacerumsfeld-code/DataStructuresAndAlgorithms#readme",
   "dependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^26.6.3"
   }
 }
