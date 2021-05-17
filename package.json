@@ -16,8 +16,7 @@
     "test-hash-table": "jest hash-table.spec.js",
     "test-graph": "jest graph.spec.js",
     "test": "jest",
-    "coverage": "jest --coverage",
-    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
+    "coverage": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
