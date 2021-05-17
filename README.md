@@ -1,5 +1,8 @@
 # Javascript Data Structure/Algorithm Refresher
 by Nick Papadakis
+
+![Languages](https://img.shields.io/github/languages/top/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher)
+
 # Introduction
 Hello and welcome to the Javascript Data Structures and Algorithm (DSA) Refresher! This is a brief romp through the key essentials of data structures and algorithms. The goal of this project is to jog your memory of some of the key fundamentals of computer science and programming, then allow you to test your skills against a complete test suite. As you have surmised from the title, we will focus on implementing these concepts in Javascript.
 
