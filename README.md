@@ -2,9 +2,11 @@
 by Nick Papadakis
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![Last Commit](https://img.shields.io/github/last-commit/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)\
 ![Languages](https://img.shields.io/github/languages/top/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher)
+![Repo size](https://img.shields.io/github/repo-size/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher)
 [![Coverage Status](https://coveralls.io/repos/github/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher/badge.svg?branch=main)](https://coveralls.io/github/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher?branch=main)
-
 
 # Introduction
 Hello and welcome to the Javascript Data Structures and Algorithm (DSA) Refresher! This is a brief romp through the key essentials of data structures and algorithms. The goal of this project is to jog your memory of some of the key fundamentals of computer science and programming, then allow you to test your skills against a complete test suite. As you have surmised from the title, we will focus on implementing these concepts in Javascript.
