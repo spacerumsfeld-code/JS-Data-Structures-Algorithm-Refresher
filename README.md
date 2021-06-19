@@ -8,6 +8,15 @@ by Nick Papadakis
 ![Repo size](https://img.shields.io/github/repo-size/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher)
 [![Coverage Status](https://coveralls.io/repos/github/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher/badge.svg?branch=main)](https://coveralls.io/github/spacerumsfeld-code/JS-Data-Structures-Algorithm-Refresher?branch=main)
 
+# Table of Contents
+[1. Introduction](#introduction)\
+[2. Who Should Use This](#who-should-use-this)\
+[3. Get Started](#get-started)\
+[4. Scripts](#scripts)\
+[5. Acknowledgements](#acknowledgements)\
+[6. Feedback](#feedback)
+
+
 # Introduction
 Hello and welcome to the Javascript Data Structures and Algorithm (DSA) Refresher! This is a brief romp through the key essentials of data structures and algorithms. The goal of this project is to jog your memory of some of the key fundamentals of computer science and programming, then allow you to test your skills against a complete test suite. As you have surmised from the title, we will focus on implementing these concepts in Javascript.
 
@@ -15,8 +24,6 @@ Hello and welcome to the Javascript Data Structures and Algorithm (DSA) Refreshe
 The target audience for this project are those wanting a refresher in DSA, who want a proper test
 suite to assess their work. Additionally, those already quite familiar with DSA but who are not
 familiar with Javascript may gain utility seeing implementations in the language.
-# How to Use
-Begin with Section 1 and proceed in numerical order from there. As you proceed, take a gander at the Practice Problems Section to test your knowledge -- each block of practice problems comes with a test suite to assess your progress.
 
 # Get Started
 1. Clone this repository
@@ -41,7 +48,7 @@ npm run test-graph : run the graph test suite
 # Acknowledgements
 Much of the content of this refresher is from Colt Steele's Data Structures and Algorithms course on Udemy.
 
-# Have Fun!
+# Feedback
 Feel free to send feedback / suggestions to:
 nickfin2014@gmail.com
 
